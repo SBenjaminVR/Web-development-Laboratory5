@@ -1,0 +1,18 @@
+#shoppingList {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    border: 1px solid gray;
+    color: gray;
+    margin: 1%; 
+    padding: 10px; 
+    font-size: 18px;
+    font-style: italic;
+}
+
+.checkBtn, .deleteBtn {
+    margin: 3px;
+}
