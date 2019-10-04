@@ -1,7 +1,6 @@
 function addItem() {
     $("#addItemBtn").on('click', function (event) {
         event.preventDefault();
-        console.log("you did it champ");
 
         let item = $("#item").val();
         if (item != "") {
@@ -11,6 +10,20 @@ function addItem() {
 
         
     });  
+
+    $("#shoppingList").on('click', '.checkBtn', function(event) {
+        event.preventDefault();
+        let liElement = $(this).parent().parent();
+
+        if ($(liElement).hasClass('crossed')) {
+            $(liElement).removeClass('crossed');
+        }
+        else {
+            $(liElement).addClass('crossed');
+        }
+
+        
+    });
 }
 
 

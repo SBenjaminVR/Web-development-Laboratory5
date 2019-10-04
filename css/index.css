@@ -16,3 +16,7 @@ li {
 .checkBtn, .deleteBtn {
     margin: 3px;
 }
+
+.crossed {
+    text-decoration: line-through
+}
