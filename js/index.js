@@ -29,7 +29,6 @@ function addItem() {
         event.preventDefault();
         let liElement = $(this).parent().parent();
         $(liElement).remove();
-
     });
 }
 
