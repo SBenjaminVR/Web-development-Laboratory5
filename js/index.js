@@ -24,6 +24,13 @@ function addItem() {
 
         
     });
+
+    $("#shoppingList").on('click', '.deleteBtn', function (event) {
+        event.preventDefault();
+        let liElement = $(this).parent().parent();
+        $(liElement).remove();
+
+    });
 }
 
 
